@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Amortización</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container my-4">
@@ -40,27 +41,29 @@
                     <input type="number" id="term" class="form-control" placeholder="6" required>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="calculateAmortization()">Calcular</button>
+            <button type="button" class="btn btn-primary w-100" onclick="calculateAmortization()">Calcular</button>
         </form>
-        <table id="amortizationTable" class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Mes</th>
-                    <th>Fecha de Pago</th>
-                    <th>Días entre pagos</th>
-                    <th>Saldo Inicial</th>
-                    <th>Cuota Mensual</th>
-                    <th>Seguro</th>
-                    <th>Interés</th>
-                    <th>Total a Pagar</th>
-                    <th>Nuevo Saldo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Las filas se generarán dinámicamente -->
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table id="amortizationTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Fecha de Pago</th>
+                        <th>Días entre pagos</th>
+                        <th>Saldo Inicial</th>
+                        <th>Cuota Mensual</th>
+                        <th>Seguro</th>
+                        <th>Interés</th>
+                        <th>Total a Pagar</th>
+                        <th>Nuevo Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas generadas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="dd.js"></script>
 </body>
 </html>
